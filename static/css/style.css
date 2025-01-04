@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img{
+    height: 52px;
+    width: 50px;
+}
+
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+
+.main-bg{
+    margin-top: 68px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/main-bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-text{
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.services .service-img{
+    height: 300px;
+}
+
+.services h3,
+.services p{
+    line-height: 2;
+}

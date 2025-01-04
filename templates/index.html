@@ -1,0 +1,60 @@
+<!-- import base.html file with bootstrap link and NAVBAR -->
+{% extends 'base.html' %}
+
+{% block title %} Booking {% endblock %}
+
+<!-- Main content -->
+{% block main %}
+<div class="main-bg">
+    <h1 class="main-text">Welcome To Our Restaurant</h1>
+</div>
+
+<!--  Services page -->
+<div class="container mb-5">
+    <div class="services mt-5">
+        <h1 class="text-center mb-5">Our Services</h1>
+        <div class="row">
+            <div class="col-md-5">
+                <img src="{{ url_for('static', filename='img/service1.jpg') }}" class="service-img rounded">
+            </div>
+            <div class="col-md-7 text-center">
+                <h3>High Quality Foods</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+
+            <!--  -->
+            <div class="col-md-7 mt-5 text-center">
+                <h3>Express Delivery</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+            </div>
+            <div class="col-md-5  mt-5">
+                <img src="{{ url_for('static', filename='img/service2.webp') }}" class="service-img rounded">
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Our Menus From DataBase -->
+<div class="container">
+    <div class="menu ">
+        <h1 class="text-center mb-5">Our Menu</h1>
+        <!-- cards -->
+         <div class="row">
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="{{ url_for('static', filename='../../uploads/menu1.jpg') }}" alt="" height="500">
+                    
+                        <a class="btn btn-primary">Order</a>
+                    </div>
+                </div>
+            </div>
+            
+         </div>
+    </div>
+</div>
+
+{% endblock %}
